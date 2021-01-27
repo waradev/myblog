@@ -5,13 +5,13 @@ app = Flask(__name__)
 
 @app.route('/')
 def index():
-    title = "top"
+    title = "index.html"
     # htmlを表示
     return render_template('index.html', title=title)
 
 @app.route('/prev/')
 def prev():
-    title = "prev"
+    title = "prev.html"
     return render_template('prev.html', title=title)
 
 if __name__ == '__main__':
