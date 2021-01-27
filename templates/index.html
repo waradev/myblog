@@ -1,43 +1,8 @@
-<!DOCTYPE html>
-<html lang="ja">
-	<head>
-		<!-- 文字コード-->
-		<meta charset="UTF-8" />
-		<!-- ページのタイトル -->
-		<title>My Blog</title>
-		<meta
-			name="viewport"
-			content="width=device-width, initial-scale=1, shrink-to-fit=no"
-		/>
-		<link
-			rel="stylesheet"
-			href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.css"
-		/>
-		<link rel="stylesheet" href="static/css/style.css" />
-	</head>
-	<body>
-		<div class="wrapper">
-			<header>
-				<h1>My Blog</h1>
-				<ul class="nav-list">
-					<li class="nav-list-item">
-						<a href="#">Home</a>
-					</li>
-					<li class="nav-list-item">About</li>
-					<li class="nav-list-item">Topic</li>
-				</ul>
-			</header>
-
-			<div class="container">
-				<div class="main">
-					<h1>Jinja2でHTMLファイルを読み込みことに成功しました。</h1>
-				</div>
-				<div class="side"><p>My Blog</p></div>
-			</div>
-			<footer></footer>
-		</div>
-
-		<!-- js読み込み -->
-		<script src="static/js/script.js"></script>
-	</body>
-</html>
+{%- extends "layout.html" %} {%- block content %}
+<div class="container">
+	<div class="main">
+		<h1>HTMLファイルを読み込みことに成功しました。</h1>
+	</div>
+	<div class="side"><p>My Blog</p></div>
+</div>
+{%- endblock %}
