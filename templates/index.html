@@ -1,8 +1,10 @@
 <!DOCTYPE html>
 <html lang="ja">
 	<head>
+		<!-- 文字コード-->
 		<meta charset="UTF-8" />
-		<title>Hello Jinja2</title>
+		<!-- ページのタイトル -->
+		<title>My Blog</title>
 		<meta
 			name="viewport"
 			content="width=device-width, initial-scale=1, shrink-to-fit=no"
@@ -15,12 +17,22 @@
 	</head>
 	<body>
 		<div class="wrapper">
-			<header>header</header>
+			<header>
+				<h1>My Blog</h1>
+				<ul class="nav-list">
+					<li class="nav-list-item">
+						<a href="#">Home</a>
+					</li>
+					<li class="nav-list-item">About</li>
+					<li class="nav-list-item">Topic</li>
+				</ul>
+			</header>
+
 			<div class="container">
 				<div class="main">
 					<h1>Jinja2でHTMLファイルを読み込みことに成功しました。</h1>
 				</div>
-				<div class="side"><p>Hello Jinja2</p></div>
+				<div class="side"><p>My Blog</p></div>
 			</div>
 			<footer></footer>
 		</div>
