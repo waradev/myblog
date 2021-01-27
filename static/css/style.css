@@ -25,3 +25,17 @@ header .headline {
 	display: inline-block;
 	margin: 0 20px;
 }
+
+.container {
+	/* 子要素を横並びにする */
+	display: flex;
+}
+
+.main {
+	background: pink;
+	width: 70%;
+}
+.side {
+	background: orange;
+	width: 30%;
+}
