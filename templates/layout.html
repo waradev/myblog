@@ -1,3 +1,4 @@
+<!-- 全体のレイアウト -->
 <!DOCTYPE html>
 <html lang="ja">
 	<head>
@@ -13,7 +14,7 @@
 			rel="stylesheet"
 			href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.css"
 		/>
-		<link rel="stylesheet" href="static/css/style.css" />
+		<link rel="stylesheet" href="{{ url_for('static',filename='css/style.css') }}" />
 		<!-- Font Awesome -->
 		<link
 			rel="stylesheet"
@@ -47,7 +48,7 @@
 				<h1>My Blog</h1>
 				<ul class="nav-list">
 					<li class="nav-list-item">
-						<a href="#">Home</a>
+						<a href="/">Home</a>
 					</li>
 					<li class="nav-list-item"><a href="/prev/">About</a></li>
 					<li class="nav-list-item">Topic</li>
@@ -62,7 +63,7 @@
 		</div>
 
 		<!-- js読み込み -->
-		<script src="static/js/script.js"></script>
+		<script src="{{ url_for('static', filename='js/script.js') }}"></script>
 		<!-- Optional JavaScript -->
 		<!-- jQuery first, then Popper.js, then Bootstrap JS -->
 		<!-- JQuery -->
