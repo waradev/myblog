@@ -9,5 +9,10 @@ def index():
     # htmlを表示
     return render_template('index.html', title=title)
 
+@app.route('/prev/')
+def prev():
+    title = "prev"
+    return render_template('prev.html', title=title)
+
 if __name__ == '__main__':
     app.run()
